@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <title>number of vovels</title>
+        <script>
+        function fun(){
+            var x=document.getElementById("id1").value;
+            var count=0;
+            for(var i=0;i<x.length;i++)
+                {
+                    if(x[i]=='a'||x[i]=='e'||x[i]=='i'||x[i]=='o'||x[i]=='u'){
+                        count+=1;
+                    }
+                }
+            document.getElementById("id2").innerHTML=count;
+        }
+        </script>
+    </head>
+<body>
+    <h1> this program will tell u the number of vovels</h1>
+    <input type="text" id="id1" placeholder="enter your name">
+    <input type="button" value="count" onclick="fun()">
+    <h1 id="id2"></h1>
+    </body>
+</html>
